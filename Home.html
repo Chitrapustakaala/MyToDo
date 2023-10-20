@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <h1>My To Do List</h1>
-    </head>
-    <body>
-        <input type="radio" id="1" name="schedule doctor appointment" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label>  
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ToDo List</title>
+    <style>
+        ul {
+            padding: 0;
+            display: grid;
+            gap: 10px;
+        }
+        if {
+            display: grid;
+            grid-template-columns: 50px 50px 1fr;
+            align-items: center;
+            gap: 10px;
+        }
+        input[type=checkbox] {
+            margin: 0;
+            width: 25px;
+            height: 25px;
+        }
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My ToDo List</h1>
+    <form>
+    <input type="text">
+    <button>+</button>
+    </form>
+    <ul>
+        <div>
+        <li>
+            <input type="checkbox">
+            <button>X</button>
+            <p>Schedule Doctor Appointment</p>
+        </li>
+    </div>
+        <li>
+            <input type="checkbox">
+            <button>X</button>
+            <p>Cook Lunch</p>
+        </li>
+        <li>
+            <input type="checkbox">
+            <button>X</button>
+            <p>Pickup Kids</p>
+        </li>
+    </ul>
+</body>
 </html>
